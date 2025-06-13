@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards Interativos</title>
+    <title>Flashcard: Quem sou?</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            padding: 20px;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
             background-color: #f4f4f9;
         }
         .flashcard {
-            width: 200px;
-            height: 300px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
             transform-style: preserve-3d;
-            transition: transform 0.3s;
+            transition: transform 0.6s;
             cursor: pointer;
         }
-        .flashcard:hover {
+        .card:hover {
             transform: rotateY(180deg);
         }
-        .flashcard .front, .flashcard .back {
+        .card .front, .card .back {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -39,11 +41,11 @@
             padding: 20px;
             text-align: center;
         }
-        .flashcard .front {
+        .card .front {
             background-color: #4CAF50;
             color: white;
         }
-        .flashcard .back {
+        .card .back {
             background-color: #f9f9f9;
             color: #333;
             transform: rotateY(180deg);
@@ -53,74 +55,475 @@
 <body>
 
     <div class="flashcard">
-        <div class="front">
-            <h3>MEUS HOBBIES</h3>
-        </div>
-        <div class="back">
-            <p>CORRER, TREINAR, ASSISTIR FUTEBOL.</p>
-        </div>
-    </div>
-
-    <div class="flashcard">
-        <div class="front">
-            <h3>Função no Alfabeto</h3>
-        </div>
-        <div class="back">
-            <p>A letra A é uma vogal e aparece em aproximadamente 71% das palavras em português.</p>
+        <div class="card">
+            <div class="front">
+                <h3>Quem sou?</h3>
+            </div>
+            <div class="back">
+                <p>Meu nome é Daniel, tenho 16 anos e moro em Ponta Grossa, Paraná. Sou cristão e estou em fase de estudos.</p>
+            </div>
         </div>
     </div>
 
+</body>
+</html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard: Quem sou?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .flashcard {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .card .front {
+            background-color: #1b1a24;
+            color: white;
+        }
+        .card .back {
+            background-color: #f9f9f9;
+            color: #992626;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
     <div class="flashcard">
-        <div class="front">
-            <h3>Simbolismo</h3>
-        </div>
-        <div class="back">
-            <p>Como primeira letra do alfabeto, simboliza o começo e a liderança.</p>
+        <div class="card">
+            <div class="front">
+                <h3>Meu Futuro</h3>
+            </div>
+            <div class="back">
+                <p>Pretendo estar com uma vida estável. E principalmente fazendo a vontade de Deus.</p>
+            </div>
         </div>
     </div>
 
+</body>
+</html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard: Quem sou?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .flashcard {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .card .front {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .card .back {
+            background-color: #f9f9f9;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
     <div class="flashcard">
-        <div class="front">
-            <h3>Matemática</h3>
-        </div>
-        <div class="back">
-            <p>Representa uma variável comum em equações e fórmulas.</p>
+        <div class="card">
+            <div class="front">
+                <h3>Meus Hobbies</h3>
+            </div>
+            <div class="back">
+                <p>Correr, Treinar, Assistir Futebol.</p>
+            </div>
         </div>
     </div>
 
+</body>
+</html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard: Quem sou?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .flashcard {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .card .front {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .card .back {
+            background-color: #f9f9f9;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
     <div class="flashcard">
-        <div class="front">
-            <h3>Física</h3>
-        </div>
-        <div class="back">
-            <p>Símbolo da unidade de corrente elétrica, o ampère.</p>
+        <div class="card">
+            <div class="front">
+                <h3>Quem sou?</h3>
+            </div>
+            <div class="back">
+                <p>Meu nome é Daniel, tenho 16 anos e moro em Ponta Grossa, Paraná. Sou cristão e estou em fase de estudos.</p>
+            </div>
         </div>
     </div>
 
+</body>
+</html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard: Quem sou?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .flashcard {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .card .front {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .card .back {
+            background-color: #f9f9f9;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
     <div class="flashcard">
-        <div class="front">
-            <h3>Química</h3>
-        </div>
-        <div class="back">
-            <p>Representa o elemento químico argônio (Ar).</p>
+        <div class="card">
+            <div class="front">
+                <h3>Quem sou?</h3>
+            </div>
+            <div class="back">
+                <p>Meu nome é Daniel, tenho 16 anos e moro em Ponta Grossa, Paraná. Sou cristão e estou em fase de estudos.</p>
+            </div>
         </div>
     </div>
 
+</body>
+</html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard: Quem sou?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .flashcard {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .card .front {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .card .back {
+            background-color: #f9f9f9;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
     <div class="flashcard">
-        <div class="front">
-            <h3>Música</h3>
-        </div>
-        <div class="back">
-            <p>Representa a nota musical "Lá" em países anglo-saxônicos e germânicos.</p>
+        <div class="card">
+            <div class="front">
+                <h3>Quem sou?</h3>
+            </div>
+            <div class="back">
+                <p>Meu nome é Daniel, tenho 16 anos e moro em Ponta Grossa, Paraná. Sou cristão e estou em fase de estudos.</p>
+            </div>
         </div>
     </div>
 
+</body>
+</html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard: Quem sou?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .flashcard {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .card .front {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .card .back {
+            background-color: #f9f9f9;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
     <div class="flashcard">
-        <div class="front">
-            <h3>Astronomia</h3>
+        <div class="card">
+            <div class="front">
+                <h3>Quem sou?</h3>
+            </div>
+            <div class="back">
+                <p>Meu nome é Daniel, tenho 16 anos e moro em Ponta Grossa, Paraná. Sou cristão e estou em fase de estudos.</p>
+            </div>
         </div>
-        <div class="back">
-            <p>Indica a estrela principal de uma constelação, também chamada de "alfa".</p>
+    </div>
+
+</body>
+</html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard: Quem sou?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .flashcard {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .card .front {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .card .back {
+            background-color: #f9f9f9;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flashcard">
+        <div class="card">
+            <div class="front">
+                <h3>Quem sou?</h3>
+            </div>
+            <div class="back">
+                <p>Meu nome é Daniel, tenho 16 anos e moro em Ponta Grossa, Paraná. Sou cristão e estou em fase de estudos.</p>
+            </div>
         </div>
     </div>
 
